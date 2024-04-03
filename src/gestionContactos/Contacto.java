@@ -89,5 +89,7 @@ public class Contacto {
 
     public void setEdad(int edad) {
 	this.edad = edad;
-    }       
+    }
+    
+    
 }
