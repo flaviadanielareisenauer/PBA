@@ -1,18 +1,8 @@
 /*
+// EJERCICIO |
 Se te pide el desarrollo de una aplicación de gestión de contactos de dispositivos virtuales. Por cada contacto se tendrá un nombre, 
 un apellido, su DNI, email y edad. 
 Primero se te pide que implementes un programa cliente que genere tres contactos y muestre sus apellidos y nombres por pantalla. 
-A continuación, dejamos también el segundo enunciado cuya solución quedó planteada, para hacer la puesta en común al comienzo de la clase que
-viene: 
-Se pretende modelar un sistema de gestión de empleados de una PYME. 
-Se sabe que un empleado tiene, en un principio: nombre, apellido, edad y salario. 
-La empresa tiene, entre otros sistemas de aumento de sueldo, la incorporación de un plus mensual de $5000 dependiendo de si el empleado 
-tiene 40 años o más. 
-Se te pide modelar la solución implementando las clases que sean necesarias, así como también un programa cliente que permita crear dos 
-empleados cuyos datos son los siguientes: 
-
-Empleado 1: Fernando Ureña, 23 años, sueldo mensual de $45000 
-Empleado 2: Adrián López, 50 años, sueldo mensual de $70000 
 */
 
 package gestionContactos;
@@ -89,7 +79,5 @@ public class Contacto {
 
     public void setEdad(int edad) {
 	this.edad = edad;
-    }
-    
-    
+    }     
 }
