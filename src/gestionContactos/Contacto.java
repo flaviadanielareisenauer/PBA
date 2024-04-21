@@ -1,7 +1,7 @@
 /*
-// EJERCICIO |
-Se te pide el desarrollo de una aplicación de gestión de contactos de dispositivos virtuales. Por cada contacto se tendrá un nombre, 
-un apellido, su DNI, email y edad. 
+EJERCICIO 1
+Se te pide el desarrollo de una aplicación de gestión de contactos de dispositivos virtuales. Por cada contacto se tendrá un
+nombre, un apellido, su DNI, email y edad. 
 Primero se te pide que implementes un programa cliente que genere tres contactos y muestre sus apellidos y nombres por pantalla. 
 */
 
@@ -79,5 +79,5 @@ public class Contacto {
 
     public void setEdad(int edad) {
 	this.edad = edad;
-    }     
+    }       
 }
