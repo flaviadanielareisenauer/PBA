@@ -82,8 +82,8 @@ public class Empleado {
     @Override
     public String toString() {
 	//return "Empleado{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", salario=" + salario + '}';
-	
-	String mensaje = "Empleado: " + this.nombre + " " + this.apellido + " con " + this.edad + " años";
+	String mensaje = "El empleado: " + this.nombre + " " + this.apellido + " de " + this.edad + " años, tiene un salario de "
+		+ this.salario;
         
 	return mensaje;
     } 
