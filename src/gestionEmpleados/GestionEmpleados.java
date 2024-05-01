@@ -16,7 +16,8 @@ class GestionEmpleados {
 
         empresa1.agregarEmpleadoALista(empleado1);
         empresa1.agregarEmpleadoALista(empleado2);
-	 */
+	*/
+	
 	for (int i = 0; i < 5; i++) {
 	    Empleado e = cargarDatosEmpleado(entrada);
 	    empresa1.agregarEmpleadoALista(e);

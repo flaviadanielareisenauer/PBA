@@ -1,6 +1,8 @@
 package gestionEmpleados;
 
 public class Empresa {
+    
+    // Insert code -> add property -> nombre, tipo, modificadores de acceso. Generate getter and setter. 
 
     private String nombre;
     private int anioFundacion;
