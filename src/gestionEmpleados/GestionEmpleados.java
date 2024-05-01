@@ -1,3 +1,25 @@
+/*
+Se pretende modelar un sistema de gestión de empleados de una PYME.
+Se sabe que un empleado tiene, en un principio: nombre, apellido, edad y salario.
+
+La empresa tiene, entre otros sistemas de aumento de sueldo, la incorporación de un plus mensual de $5000 dependiendo de si el
+empleado tiene 40 años o más.
+Se te pide modelar la solución implementando las clases que sean necesarias así como también un programa cliente que permita
+crear dos empleados cuyos datos son los siguientes:
+
+Empleado 1: Fernando Ureña, 23 años, sueldo mensual de $45000
+Empleado 2: Adrián López, 50 años, sueldo mensual de $70000
+
+Teniendo en cuenta el sistema de Gestión de Empleados que ya comenzaste a desarrollar, se pretende mejorarlo incluyendo el 
+concepto de Empresa. Una empresa tiene un nombre, un año de fundación y una lista de cierta cantidad de empleados que no puede 
+superar los 100.
+Se te pide que modifiques el programa cliente agregando la Empresa con el nombre, año de fundación y cantidad máxima de 
+empleados que vos indiques, y que agregues a Ureña, López y tres nuevos empleados más al listado de empleados de la empresa.
+
+Luego evaluar si hay que aplicar aumento (que el usuario cargará por pantalla) a los empleados indicando, por pantalla también, 
+apellido, nombre y edad de los empleados que recibieron aumento
+*/
+
 package gestionEmpleados;
 
 import java.util.Scanner;
@@ -10,13 +32,13 @@ class GestionEmpleados {
 
 	Empresa empresa1 = new Empresa("PBA S.A.", 2024, 100);
 
-	/*
+	
         Empleado empleado1 = new Empleado("Ureña", "Fernando", 23, 45000);
         Empleado empleado2 = new Empleado("Lopez", "Adrian", 50, 70000);
 
         empresa1.agregarEmpleadoALista(empleado1);
         empresa1.agregarEmpleadoALista(empleado2);
-	*/
+	
 	
 	for (int i = 0; i < 5; i++) {
 	    Empleado e = cargarDatosEmpleado(entrada);
@@ -28,18 +50,6 @@ class GestionEmpleados {
 	System.out.println("Ingrese aumento: ");
 	empresa1.evaluarInformarAumentos(entrada.nextDouble());
 
-	/*
-        System.out.println(" Informacion del empleado 1:  " + empleado1.toString());
-        System.out.println(" Informacion del empleado 2:  " + empleado2.toString());
-        System.out.println("");
-        
-        empleado1.aplicarAumento(5000);
-        empleado2.aplicarAumento(5000);
-
-        System.out.println(" Informacion del empleado 1:  " + empleado1.toString());
-        System.out.println(" Informacion del empleado 2:  " + empleado2.toString());
-        System.out.println("");
-	 */
     }
     
     private static Empleado cargarDatosEmpleado(Scanner entrada) {
@@ -55,6 +65,8 @@ class GestionEmpleados {
 
         System.out.println("Ingrese Edad: ");
         edad = entrada.nextInt();
+	
+	entrada.nextLine();
 
         System.out.println("Ingrese Salario: ");
         salario = entrada.nextDouble();
