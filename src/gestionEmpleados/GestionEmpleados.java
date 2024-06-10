@@ -21,7 +21,6 @@ apellido, nombre y edad de los empleados que recibieron aumento
 */
 
 package gestionEmpleados;
-
 import java.util.Scanner;
 
 class GestionEmpleados {
@@ -31,14 +30,6 @@ class GestionEmpleados {
 	Scanner entrada = new Scanner(System.in);
 
 	Empresa empresa1 = new Empresa("PBA S.A.", 2024, 100);
-
-	
-        Empleado empleado1 = new Empleado("Ureña", "Fernando", 23, 45000);
-        Empleado empleado2 = new Empleado("Lopez", "Adrian", 50, 70000);
-
-        empresa1.agregarEmpleadoALista(empleado1);
-        empresa1.agregarEmpleadoALista(empleado2);
-	
 	
 	for (int i = 0; i < 5; i++) {
 	    Empleado e = cargarDatosEmpleado(entrada);

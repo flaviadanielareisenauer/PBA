@@ -79,7 +79,7 @@ public class Empleado {
 	return rta;
     }
 
-    @Override
+    @Override // override: el metodo ya existe y se esta re-escribiendo
     public String toString() {
 	//return "Empleado{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", salario=" + salario + '}';
 	String mensaje = "El empleado: " + this.nombre + " " + this.apellido + " de " + this.edad + " años, tiene un salario de "
