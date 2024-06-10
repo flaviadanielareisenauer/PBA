@@ -1,18 +1,20 @@
 package FigurasGeometricas;
 
-public abstract class Figura {   
+public abstract class Figura {
     
-   private String nombre;
+    protected String nombre;
+
+    public Figura(String nombre) {
+        this.nombre = nombre;
+    }
 
     public String getNombre() {
-	return nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-	this.nombre = nombre;
+        this.nombre = nombre;
     }
-   
-   
-
     
+    public abstract double calcularArea();
 }
